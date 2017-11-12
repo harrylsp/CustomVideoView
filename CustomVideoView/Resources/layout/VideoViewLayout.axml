@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/VideoView_FrameLayout_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Yellow_250">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试测试" />
+    <CustomVideoView.ExVideoView
+        android:id="@+id/VideoView_VideoView_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ProductD_Pic_H" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--视频第一帧缩略图-->
+        <ImageView
+            android:id="@+id/VideoView_ImageView_Thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical">
+            <ImageView
+                android:id="@+id/VideoView_ImageView_Play"
+                android:layout_width="@dimen/Size_180"
+                android:layout_height="@dimen/Size_180"
+                android:scaleType="fitXY"
+                android:src="@drawable/Play"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/VideoView_ImageView_Pause"
+                android:layout_width="@dimen/Size_180"
+                android:layout_height="@dimen/Size_180"
+                android:scaleType="fitXY"
+                android:src="@drawable/Pause"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!--底部进度条-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:orientation="horizontal"
+        android:padding="3dip"
+        android:id="@+id/VideoView_Layout_VideoProgress"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="00:00"
+                android:textSize="12dp"
+                android:id="@+id/VideoView_TextView_VideoCurrentTime"
+                android:textColor="#FFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingRight="0dip">
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:id="@+id/VideoView_SeekBar_SB"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.SeekBar"
+                android:minHeight="2dip"
+                android:maxHeight="2dip"
+                android:progressDrawable="@animator/seek_img"
+                android:thumb="@animator/thumb"
+                android:thumbOffset="0dip"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="00:00"
+                android:textSize="12dp"
+                android:id="@+id/VideoView_TextView_VideoTotalTime"
+                android:textColor="#FFF"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/VideoView_Layout_FullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/VideoView_ImageView_FullScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/FullScreen" />
+        </LinearLayout>
+    </LinearLayout>
+<!--加载视频等待效果-->
+    <ProgressBar
+        android:id="@+id/VideoView_ProgressBar_PB"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical" />
+</FrameLayout>

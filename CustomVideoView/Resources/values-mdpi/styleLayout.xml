@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="Size_18" defaultValue="18">18dp</dimen>
+  <dimen name="Size_36" defaultValue="36">36dp</dimen>
+  <dimen name="Size_54" defaultValue="54">54dp</dimen>
+  <dimen name="Size_66" defaultValue="66">66dp</dimen>
+  <dimen name="Size_72" defaultValue="72">72dp</dimen>
+  <dimen name="Size_90" defaultValue="90">90dp</dimen>
+  <dimen name="Size_96" defaultValue="96">96dp</dimen>
+  <dimen name="Size_102" defaultValue="102">102dp</dimen>
+  <dimen name="Size_126" defaultValue="126">126dp</dimen>
+  <dimen name="Size_132" defaultValue="132">132dp</dimen>
+  <dimen name="Size_144" defaultValue="144">144dp</dimen>
+  <dimen name="Size_150" defaultValue="150">150dp</dimen>
+  <dimen name="Size_180" defaultValue="180">180dp</dimen>
+  <dimen name="Size_204" defaultValue="204">204dp</dimen>
+  <dimen name="Size_216" defaultValue="216">216dp</dimen>
+  <dimen name="Size_222" defaultValue="222">222dp</dimen>
+  <dimen name="Size_240" defaultValue="240">240dp</dimen>
+  <dimen name="Size_246" defaultValue="246">246dp</dimen>
+  <dimen name="Size_252" defaultValue="252">252dp</dimen>
+  <dimen name="Size_270" defaultValue="270">270dp</dimen>
+  <dimen name="Size_282" defaultValue="282">282dp</dimen>
+  <dimen name="Size_318" defaultValue="318">318dp</dimen>
+  <dimen name="Size_324" defaultValue="324">324dp</dimen>
+  <dimen name="Size_450" defaultValue="450">450dp</dimen>
+  <dimen name="Size_468" defaultValue="468">468dp</dimen>
+  <dimen name="Size_480" defaultValue="480">480dp</dimen>
+  <dimen name="Size_504" defaultValue="504">504dp</dimen>
+  <dimen name="Size_552" defaultValue="552">552dp</dimen>
+  <dimen name="Size_690" defaultValue="690">690dp</dimen>
+  <dimen name="Size_756" defaultValue="756">756dp</dimen>
+  <dimen name="Size_810" defaultValue="810">810dp</dimen>
+  <dimen name="Size_864" defaultValue="864">864dp</dimen>
+  <dimen name="Size_948" defaultValue="948">948dp</dimen>
+  <dimen name="Size_1212" defaultValue="1212">1212dp</dimen>
+  <dimen name="Size_1254" defaultValue="1254">1254dp</dimen>
+  <dimen name="Padding_12" defaultValue="12">12dp</dimen>
+  <dimen name="Padding_30" defaultValue="30">30dp</dimen>
+  <dimen name="Padding_42" defaultValue="42">42dp</dimen>
+  <dimen name="Padding_78" defaultValue="78">78dp</dimen>
+  <dimen name="Padding_66" defaultValue="66">66dp</dimen>
+  <dimen name="Padding_120" defaultValue="120">120dp</dimen>
+  <dimen name="Padding_174" defaultValue="174">174dp</dimen>
+  
+  <!--ProductDetail页面  图片  宽和高-->
+  <dimen name="ProductD_Pic_W" defaultValue="1080">1080dp</dimen>
+  <dimen name="ProductD_Pic_H" defaultValue="1080">1080dp</dimen>
+  
+</resources>

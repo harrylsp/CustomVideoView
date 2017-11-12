@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+  <item
+      android:id="@android:id/background">
+    <shape android:shape="rectangle" >
+      <solid android:color="@color/White" />
+      <!--设置圆角   -->
+      <corners android:radius="5dp" />
+    </shape>
+  </item>
+  <item
+      android:id="@android:id/progress">
+    <clip>
+      <shape android:shape="rectangle" >
+        <corners android:radius="5dp" />
+
+        <solid android:color="@color/Red" />
+      </shape>
+    </clip>
+  </item>
+</layer-list>
+
+<!--用图片设置-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--&lt;!&ndash; 背景图 &ndash;&gt;-->
+<!--<item-->
+<!--android:id="@+android:id/background"-->
+<!--android:drawable="@drawable/total" />-->
+<!--&lt;!&ndash;全部能量图  &ndash;&gt;-->
+<!--<item-->
+<!--android:id="@+android:id/SecondaryProgress"-->
+<!--android:drawable="@drawable/total" />-->
+<!--&lt;!&ndash; 进和能量图 &ndash;&gt;-->
+<!--<item-->
+<!--android:id="@+android:id/progress"-->
+<!--android:drawable="@drawable/part" />-->
+<!--</layer-list>-->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <ImageView
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:id="@+id/iv"
+      android:src="@drawable/Play"
+      android:paddingTop="5dip"
+      android:paddingBottom="5dip"
+      android:paddingLeft="40dip"
+      android:layout_gravity="center_vertical"
+    />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="播放"
+      android:id="@+id/tv"
+      android:layout_marginLeft="8dip"
+      android:layout_gravity="center_vertical"
+    />
+  <CustomVideoView.ExVideoView
+    android:id="@+id/video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+  </CustomVideoView.ExVideoView>
+</LinearLayout>
