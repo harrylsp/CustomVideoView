@@ -28,6 +28,9 @@ namespace CustomVideoView
             button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
 
             var layout = FindViewById<VideoViewLayout>(Resource.Id.VideoViewLayout);
+            //ExVideoView video = layout.FindViewById<ExVideoView>(Resource.Id.VideoView_VideoView_video);
+            layout.InitUrl("https://tbm.alicdn.com/4avTDEcUOjPu5HXisqp/GXle5GDB7ILjZ5T9n9q%40%40hd.mp4");
+            layout.InitView();
 
             //var video = FindViewById<ExVideoView>(Resource.Id.video);
             //Android.Net.Uri videoUri = Android.Net.Uri.Parse("https://tbm.alicdn.com/4avTDEcUOjPu5HXisqp/GXle5GDB7ILjZ5T9n9q%40%40hd.mp4");

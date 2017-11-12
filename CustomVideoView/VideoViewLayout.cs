@@ -74,7 +74,7 @@ namespace CustomVideoView
         /// <summary>
         /// 视频网络地址
         /// </summary>
-        private string url = "https://tbm.alicdn.com/4avTDEcUOjPu5HXisqp/GXle5GDB7ILjZ5T9n9q%40%40hd.mp4";
+        public string url { get; set; }
         #endregion
 
         #region 委托
@@ -115,13 +115,21 @@ namespace CustomVideoView
             // 导入布局  
             LayoutInflater.From(context).Inflate(Resource.Layout.VideoViewLayout, this, true);
             // 初始化布局
-            InitView();
+            //InitView();
 
         }
         #endregion
 
 
         #region 自定义函数
+        /// <summary>
+        /// 初始化视频URL
+        /// </summary>
+        public void InitUrl(string url)
+        {
+            this.url = url;
+        }
+
         /// <summary>
         /// 初始化控件
         /// </summary>
